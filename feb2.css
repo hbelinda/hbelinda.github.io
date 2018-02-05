@@ -1,0 +1,51 @@
+h1{
+		color: #c41d00;
+}
+h3{
+	color: #7a1200;
+}
+
+h5{
+	color: #037784;
+	font-size: 1.25rem;
+}
+
+ul{
+	background-color : #bedfe2; 
+}
+
+th{
+	color : #050072
+}
+
+div{
+	border : .2rem solid #b20a0a;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #8c0909;
+	text-align: center;
+}
+ 
+ .title{
+	 font-size: 2rem;
+ } 
+ 
+ 
+body{
+	font-size: 120%;
+	font-family: calibri;
+}
+
+
+a:link{
+	color: #ff002e;
+}
+
+a:visited{
+	color: #c18326;
+}
+
+a:hover, a:focus{
+	color : #32b4ff;
+}
+
