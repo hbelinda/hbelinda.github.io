@@ -3,6 +3,7 @@ h1{
 }
 h3{
 	color: #7a1200;
+	border-bottom: 1px solid black;
 }
 
 h5{
@@ -18,16 +19,23 @@ th{
 	color : #050072
 }
 
-div{
+#playlist{
 	border : .2rem solid #b20a0a;
 	font-size: 2rem;
 	font-weight: bold;
 	color: #8c0909;
 	text-align: center;
+	margin: 1rem;
 }
+ 
+ .gray{
+	 color: #96999e;
+ }
  
  .title{
 	 font-size: 2rem;
+	 border-left: 1px solid black;
+	 padding-left: .25em;
  } 
  
  
