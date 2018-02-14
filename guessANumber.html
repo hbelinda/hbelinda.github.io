@@ -7,13 +7,13 @@
 		<link rel="stylesheet" href="guessANumber.css"/>
 	</head>
 	<body>
+<!--		<div id = "container"></div> -->
 		<h1>Guess a Number!</h1>
-		<form>
-		Your Guess:<br>
-		<input type="text" name="guess"><button type="button">Guess</button>
-		</form>
-		<canvas id="bar"></canvas>
-		<p id="pastGuesses"><u>Past Guesses<u></p>
+		<p>Your Guess:</p>
+		<input type="text" name="guess" id="theGuess"><button type="button" onclick="enterGuess()">Guess</button>
+		<div id="bar"><div id="left"></div><div id="right"></div></div>
+		<p id="pastGuesses"><u>Past Guesses</u></p>
+		<p id="thePast">None</p>
 	</body>	
 		
 <script type="text/javascript" src="guessANumber.js"></script>
