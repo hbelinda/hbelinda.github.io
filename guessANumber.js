@@ -31,7 +31,7 @@ function colorBar(guess, answer)
 		right.style.width = 100-guess +"%";
 	}// else if
 	else{
-		document.getElementById("winner").innerHTML = "Congrats! You guessed the right answer of " +answer;
+		document.getElementById("winner").innerHTML = "Congrats! You guessed the right answer of " + answer + "!";
 		create();
 	}//else
 } //colorBar	
