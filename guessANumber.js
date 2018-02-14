@@ -22,19 +22,18 @@ function colorBar(guess, answer)
 	left = document.getElementById("left");
 	var right;
 	right = document.getElementById("right");
-	if(guess = answer)
-	{
-//		create();
-	}
-	else{
-		if(guess < answer){
+
+	if(guess < answer){
 		left.style.width = guess + "%" ;
-		}
-		else
-		{
+	}// if
+	else if(guess > answer)
+	{
 		right.style.width = 100-guess +"%";
-		}
-	}
+	}// else if
+	else{
+		document.getElementById("winner").innerHTML = "Congrats! You guessed the right answer of " +answer;
+		create();
+	}//else
 } //colorBar	
 
 function enterGuess()
