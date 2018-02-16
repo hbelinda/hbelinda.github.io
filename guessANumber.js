@@ -3,11 +3,25 @@
 */
 
 
-var answer = Math.floor(Math.random() *101);
+var answer = Math.ceil(Math.random() *100);
 var pastGuess = " ";
 
 window.onload = function()
 {
+/*	Sorting names
+	var person1 = {fname: "John", lname: "Smith", age: 12};
+	var person2 = {fname: "Oliver", lname: "Smith", age: 21};
+	var person3 = {fname: "Olly", lname: "Johnson", age: 15};
+	var person4 = {fname: "Doctor", lname: "Tommy", age: 29};
+	
+	var people = [person1, person2, person3, person4];
+	
+	people.sort(function(a,b) ==> (a.age - b.age));
+	people.sort(function(a,b){
+						if(a.lname === b.lname){
+							if(a.lname<b.lname)return 1;
+							else{return a.lname = b.lname;});
+*/	
 //	var answer = Math.floor(Math.random() *101);
 //	alert("the answer is: " + answer);
 //	var guess = enterGuess();
@@ -22,27 +36,28 @@ function colorBar(guess, answer)
 	left = document.getElementById("left");
 	var right;
 	right = document.getElementById("right");
-
 	if(guess < answer){
 		left.style.width = guess + "%" ;
+//		element.getElementById("lowGuess").style.left = guess + "px";
+//		element.getElementById("lowGuess").innerHTML = guess;
 	}// if
 	else if(guess > answer)
 	{
 		right.style.width = 100-guess +"%";
 	}// else if
 	else{
-		document.getElementById("winner").innerHTML = "Congrats! You guessed the right answer of " + answer + "!";
+		document.getElementById("winner").innerHTML = "<h1>Congrats! You guessed the right answer of " + answer + "!</h1>";
 		create();
 	}//else
 } //colorBar	
 
 function enterGuess()
 {
-	alert("the answer is: " + answer);
+//	alert("the answer is: " + answer);
 	var guess =(document.getElementById("theGuess").value);
 	colorBar(guess, answer);
-	this.pastGuess = this.pastGuess + guess + "<br>";
-	document.getElementById("thePast").innerHTML = this.pastGuess;
+	pastGuess = pastGuess + guess + "<br>";
+	document.getElementById("thePast").innerHTML = pastGuess;
 } //enterGuess	
 
 

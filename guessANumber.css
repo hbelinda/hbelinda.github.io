@@ -14,7 +14,7 @@ Guess a number CSS
 	float: left;
 	height: 2rem;
 	width: 0.01rem;
-	background-color: red;
+	background-color:  #ecd4f9;
 }
 
 #right{
@@ -22,9 +22,12 @@ Guess a number CSS
 	float: right;
 	height: 2rem;
 	width: 0.01rem;
-	background-color: red;
+	background-color: #ecd4f9;
 }
- 
+
+#winner{
+	color: pink;
+}
 
 #container
 {
