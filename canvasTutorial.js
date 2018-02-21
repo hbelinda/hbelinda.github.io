@@ -26,4 +26,17 @@ function draw()
 	context.lineTo(100,80);
 	context.lineTo(100,35);
 	context.fill();
+	
+	var req = new XMLHttpRequest();
+	req.onreadystatechange = function(){
+		if(req.readyState ==4 && req.status == 200){
+			
+			window.alert("sucess");
+			window.alert(req.responseText);
+		}
+	}
+	req.open("GET", "http://freegeoip.net/json/111.118.10.64", true);
+//	req.open("GET", "http://swapi.co/api/people/1", true);
+	req.send();
+	
 }
