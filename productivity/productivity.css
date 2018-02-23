@@ -12,11 +12,17 @@ h1{
 
 #container{
 	margin: 2rem;
-
 }
+
+img{
+	height: auto;
+	width: 15vw;
+}
+
 .row{
 	padding: 1rem;
 	height: 15rem;
+	text-align: center;
 }
 
 .modal{
@@ -40,6 +46,7 @@ h1{
 	width: 90%;
 }
 
+
 img.demo {
 	opacity : 0.5;	
 	height: 4rem;
@@ -49,8 +56,8 @@ img.demo {
 	opacity:1;
 }
 img.hoverShadow{
-	transition: 0.4s;
-	height: 100%;
+
+
 }
 
 hover-shadow:hover {
