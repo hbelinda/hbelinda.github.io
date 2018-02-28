@@ -7,7 +7,7 @@ Belinda Huang
 h1{
 	font-family: Arial, sans-serif;
 	text-align: center;
-
+	color: pink;
 }
 
 #container{
@@ -35,7 +35,7 @@ img{
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: gray;	
+	background-color: black;	
 }
 
 
@@ -61,6 +61,16 @@ img{
   color: #999;
   text-decoration: none;
   cursor: pointer;
+}
+
+.play
+{
+	color: white;
+	position: abolute;
+	top: 1rem;
+	left: 2rem;
+	font-size: 3rem;
+	font-weight: bold;
 }
 
 .mySlides {
@@ -94,6 +104,7 @@ img{
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+
 .numbertext {
   color: black;
   font-size: 12px;
@@ -111,11 +122,9 @@ img.demo {
 .active, .demo:hover{
 	opacity:1;
 }
-img.hoverShadow{
 
 
-}
+img.hoverShadow:hover {
+	opacity: 0.5;
 
-hover-shadow:hover {
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15), 0 6px 20px 0 rgba(0,0,0,0.2);
 }
