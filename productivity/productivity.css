@@ -10,6 +10,15 @@ h1{
 	color: pink;
 }
 
+a{
+	font-family: sans-serif;
+	color: #b7a2c1;
+}
+
+a:hover{
+	color: purple;
+}
+	
 #container{
 	margin: 2rem;
 }
