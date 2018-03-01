@@ -1,24 +1,29 @@
-window.onload = function(){
-
-
-}
-
 function openModal(){
 
 	var modal = document.getElementById("myModal")
-	modal.style.display = "block";	
+	modal.style.display = "block";
+	document.onkeydown = function(evt) {
+	    evt = evt || window.event;
+	    if (evt.keyCode == 27) {
+	       closeModal();
+	    };
+			if(evt.keyCode == 37){changeSlides(-1);};
+			if(evt.keyCode == 39){changeSlides(1);};
+	};
 }
+
 
 function keyPress(event)
 		{
-			window.alert("in Key Press" + event.keyCode);
-			if(event.keyCode == 27) {closeModal();}
+			console.log("in keyPress");
+			if(event.keyCode == 27) {console.log("pressed esc"); closeModal();}
 		//	if(event.keyCode == 37) {changeSlides(-1);} //left arrow
 		//	if(event.keyCode == 39) {changeSlides(1);} //right arrow
 		}
 
 function closeModal(){
 	document.getElementById("myModal").style.display = "none";
+	document.onkeydown = function(){};
 }
 
 var slideIndex = 1;
@@ -48,16 +53,17 @@ function slideShow()
     slideShowIndex++;
     if (slideShowIndex > slides.length) {slideShowIndex = 1}
     slides[slideShowIndex-1].style.display = "block";
-    setTimeout(slideShow, 10000);
+
+    setTimeout(slideShow, 5000);
 }
 
 function showSlides(n){
-console.log("in showSlides " + n);
+	//console.log("in showSlides " + n);
 	var i;
 	var slides = document.getElementsByClassName("mySlides");
 	var dots = document.getElementsByClassName("demo");
 	var captionText = document.getElementsByClassName("caption");
-	
+
 	if(n > slides.length){slideIndex=1;}
 	if(n < 1 ) {slideIndex = slides.length;}
 	for(i=0; i<slides.length; i++)

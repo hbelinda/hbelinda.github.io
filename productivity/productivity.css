@@ -3,6 +3,9 @@ Productivity Web Page
 
 Belinda Huang
 */
+body{
+	background-color: white;
+}
 
 h1{
 	font-family: Arial, sans-serif;
@@ -18,7 +21,7 @@ a{
 a:hover{
 	color: purple;
 }
-	
+
 #container{
 	margin: 2rem;
 }
@@ -44,7 +47,7 @@ img{
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: black;	
+	background-color: black;
 }
 
 
@@ -123,7 +126,7 @@ img{
 }
 
 img.demo {
-	opacity : 0.5;	
+	opacity : 0.5;
 	height: 4rem;
 	width: auto;
 }
@@ -136,4 +139,25 @@ img.demo {
 img.hoverShadow:hover {
 	opacity: 0.5;
 
+}
+
+/* To do list stuff */
+table{
+	font-family: sans-serif;
+	border: 2px solid pink;
+	padding: 1rem;
+
+}
+
+.headings{
+	font-family: sans-serif;
+	background-color: #b7a2c1;
+	padding: 1.25rem;
+
+	}
+
+.taskMenu
+{
+	font-family: Arial, sans-serif;
+	margin-bottom: 2rem;
 }
