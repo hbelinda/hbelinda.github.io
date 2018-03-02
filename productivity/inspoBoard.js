@@ -47,7 +47,7 @@ function slideShow()
 		setTimeout(function(){slides[slideShowIndex-1].style.opacity = ".5"; console.log("opacity .5");}, 4500);
 		setTimeout(slides[slideShowIndex-1].style.opacity = "1", 5000);
    slides[slideShowIndex-1].style.display = "block";
-//		slides[slideShowIndex-1].style.opacity = "1";
+//		slides[slideShowIndex-1].style.opacity = "1"; 
 
     setTimeout(slideShow, 5000);
 }
