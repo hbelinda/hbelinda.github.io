@@ -13,14 +13,6 @@ function openModal(){
 }
 
 
-function keyPress(event)
-		{
-			console.log("in keyPress");
-			if(event.keyCode == 27) {console.log("pressed esc"); closeModal();}
-		//	if(event.keyCode == 37) {changeSlides(-1);} //left arrow
-		//	if(event.keyCode == 39) {changeSlides(1);} //right arrow
-		}
-
 function closeModal(){
 	document.getElementById("myModal").style.display = "none";
 	document.onkeydown = function(){};
@@ -52,7 +44,10 @@ function slideShow()
     }
     slideShowIndex++;
     if (slideShowIndex > slides.length) {slideShowIndex = 1}
-    slides[slideShowIndex-1].style.display = "block";
+		setTimeout(function(){slides[slideShowIndex-1].style.opacity = ".5"; console.log("opacity .5");}, 4500);
+		setTimeout(slides[slideShowIndex-1].style.opacity = "1", 5000);
+   slides[slideShowIndex-1].style.display = "block";
+		slides[slideShowIndex-1].style.opacity = "1";
 
     setTimeout(slideShow, 5000);
 }
