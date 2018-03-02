@@ -44,13 +44,22 @@ function slideShow()
     }
     slideShowIndex++;
     if (slideShowIndex > slides.length) {slideShowIndex = 1}
-		setTimeout(function(){slides[slideShowIndex-1].style.opacity = ".5"; console.log("opacity .5");}, 4500);
-		setTimeout(function(){slides[slideShowIndex-1].style.opacity = "1"; console.log("opacity 1");}, 5000);
-		setTimeout(slides[slideShowIndex-1].style.opacity = "1", 5000);
+		setTimeout(function(){slides[slideShowIndex-1].style.opacity = ".5"; console.log("opacity .5");}, 9500);
+		setTimeout(function(){slides[slideShowIndex-1].style.opacity = "1"; console.log("opacity 1");}, 10000);
+		setTimeout(slides[slideShowIndex-1].style.opacity = "1", 10000);
    slides[slideShowIndex-1].style.display = "block";
 //		slides[slideShowIndex-1].style.opacity = "1";
 
-    setTimeout(slideShow, 5000);
+    setTimeout(slideShow, 10000);
+
+		document.onkeydown = function(evt) {
+		evt = evt || window.event;
+		if (evt.keyCode == 27) {
+			 closeModal();
+		};
+		if(evt.keyCode == 37){changeSlides(-1);};
+		if(evt.keyCode == 39){changeSlides(1);};
+};
 }
 
 function showSlides(n){
